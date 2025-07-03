@@ -1,0 +1,1069 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lola’s Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+      <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cmc0jcib90rt5rilw7rklu55u"></script>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Verdana;
+  }
+/* Homepage background section */
+.homepage-container {
+  height: 60vh; /* 60% of the viewport height */
+  background-image: url('img.jpg/del.png.jpg'); /* Background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  color: white;
+  padding-left: 260px; /* Add padding to the left to provide some space from the edge */
+  padding-top: 80px; /* Add padding to avoid navbar overlap */
+}
+
+/* Container */
+.container-bg {
+  margin-left: 42px;
+  margin-bottom: 185px;
+}
+
+/* Content container inside homepage */
+.content-container {
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background to enhance text visibility */
+  padding: 30px;
+  border-radius: 25px; /* Optional: adds rounded corners */
+  text-align: left; /* Centers the text within this container */
+  max-width: 470px; /* Limit the width of the content */
+  width: 100%; /* Make sure the content container doesn't stretch too wide */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller devices (screen width 810px and below) */
+@media (max-width: 810px) {
+  .homepage-container {
+    height: 50vh; /* Reduce the height of the background */
+    padding-left: 20px; /* Reduce the padding for smaller screens */
+    padding-top: 40px; /* Reduce the top padding */
+  }
+  
+
+  .content-container {
+	padding: 30px;
+	border-radius: 13px;
+	text-align: left;
+	max-width: 450px;
+	width: 92%;
+}
+
+  .container-bg {
+	margin-left: 33px;
+	margin-bottom: 187px;
+}
+
+  h1 {
+    font-size: 1.7rem; /* Smaller font size for the heading */
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 1.2rem; /* Reduce paragraph font size */
+    margin-bottom: -6px;
+  }
+
+}
+
+
+/* For mobile phones (screen width 480px and below) */
+@media (max-width: 480px) {
+  .homepage-container {
+    height: 40vh; /* Further reduce the height for very small screens */
+    padding-left: 10px; /* Reduce padding even more */
+    padding-top: 20px; /* Less top padding for mobile */
+  }
+
+  .content-container {
+	padding: 11px;
+	max-width: 65%;
+	border-radius: 15px;
+	text-align: left;
+	margin-top: 39px;
+	margin-left: -13px;
+	padding-top: 0.1px;
+}
+
+  h1 {
+    font-size: 1.02rem; /* Further reduce font size for mobile */
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 14px; /* Reduce paragraph font size further */
+    margin-bottom: -4px;
+  }
+}
+
+
+  /* Testimonial section */
+  .carousel-caption {
+    padding: 200px;
+  }
+  
+</style>
+      
+  </head>
+  <body>
+
+  <!-- NAVBAR -->
+  <header id="header" class="header sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <a class="navbar-brand" href="#">LOLA’S PRODUCTION STORE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Product</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3 mt-lg-0" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  
+
+ <!-- Homepage background section -->
+<section id="home">
+  <div class="homepage-container d-flex justify-content-center justify-content-md-between">
+      <div class="container-bg">
+        <div class="content-container" data-aos="zoom-out">
+        <h1><b>WELCOME TO LOLA'S PRODUCTION STORE</b></h1>
+        <p>Crafting premium hair care solutions for <strong>healthier, shinier hair.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+  <!-- FEATURES -->
+  <div class="b-example-divider"></div>
+
+  <!-- Container for the Features Section -->
+  <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom text-center">What Makes Our Hair Cream Special?</h2>
+  
+      <!-- Row with Features -->
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+  
+          <!-- Box 1: Long-lasting Effect -->
+          <div class="col d-flex align-items-start">
+              <div class="feature-box p-4 border rounded shadow-sm w-100">
+                  <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                      <i class="fas fa-cogs"></i> <!-- Font Awesome Icon for settings -->
+                  </div>
+                  <div>
+                      <h3 class="fs-2 text-body-emphasis">Long-lasting Effect</h3>
+                      <p>Our hair cream lasts all day, keeping your hair smooth and soft.</p>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Box 2: Natural Ingredients -->
+          <div class="col d-flex align-items-start">
+              <div class="feature-box p-4 border rounded shadow-sm w-100">
+                  <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                      <i class="fas fa-leaf"></i> <!-- Font Awesome Icon for natural ingredients -->
+                  </div>
+                  <div>
+                      <h3 class="fs-2 text-body-emphasis">Natural Ingredients</h3>
+                      <p>Made from the finest natural ingredients to ensure healthy hair.</p>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Box 3: Easy to Apply -->
+          <div class="col d-flex align-items-start">
+              <div class="feature-box p-4 border rounded shadow-sm w-100">
+                  <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                      <i class="fas fa-hand-sparkles"></i> <!-- Font Awesome Icon for easy application -->
+                  </div>
+                  <div>
+                      <h3 class="fs-2 text-body-emphasis">Easy to Apply</h3>
+                      <p>Our cream is easy to apply and absorbs quickly into your hair.</p>
+                  </div>
+              </div>
+          </div>
+  
+      </div> <!-- End Row -->
+  
+  </div> <!-- End Container -->
+  
+  <style>
+    /** ABOUT SECTION MEDIA QUERY **/
+    @media (max-width: 768px) {
+      .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin-top: 25px;
+	margin-bottom: 1rem;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--bs-heading-color);
+}
+    }  
+  </style>
+  <!-- About Section -->
+<section id="about" class="about section" style="background-color: #f0f8ff; padding: 20px 0;">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 style="font-size: 2.5rem; font-weight: bold; color: #333; text-align: center;">About Us</h2>
+    <p class="text-center" style="font-size: 1.2rem; color: #555;">
+      <span style="font-weight: bold;">Discover</span> <span class="description-title" style="color: #007bff; margin-block: -17px;">Our Story</span>
+    </p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- About Image Section -->
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <img src="img.jpg/del02.png.jpg" alt="" class="img-fluid rounded shadow-lg">
+      </div>
+
+      <!-- About Content Section -->
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="200">
+        <div class="about-content ps-0 ps-lg-3">
+
+          <!-- Our Story -->
+          <h3 style="font-size: 1.9rem; color: #333; margin-block: -17px;">Our Story</h3>
+          <p class="fst-italic" style="font-size: 1.2rem; color: #555;margin-block: 27px ;">
+            We started as a small company with a big idea – to create high-quality hair cream using the best ingredients. Over the years, we've built a reputation for our dedication to quality and customer satisfaction.
+          </p>
+          
+          <!-- Our Mission -->
+          <h3 style="font-size: 1.9rem; color: #333;">Our Mission</h3>
+          <p style="font-size: 1.2rem; color: #555; margin-block: 11px;">
+            Our mission is to provide the best hair care products that nourish, protect, and enhance the beauty of your hair. We believe in offering creams that are made from natural ingredients and are safe for everyday use.
+          </p>
+
+          <!-- Why Choose Us? -->
+          <h3 style="font-size: 1.9rem; color: #333; margin-block: 33px;">Why Choose Us?</h3>
+          <ul style="font-size: 1.1rem; color: #555;">
+            <li><i class="bi bi-check-circle" style="color: #007bff;"></i> Long-lasting effect that keeps your hair smooth all day.</li>
+            <li><i class="bi bi-check-circle" style="color: #007bff;"></i> Made with 100% natural ingredients to promote healthy hair.</li>
+            <li><i class="bi bi-check-circle" style="color: #007bff;"></i> Easy to apply, absorbs quickly, and does not leave any greasy residue.</li>
+            <li><i class="bi bi-check-circle" style="color: #007bff;"></i> Suitable for all hair types, including sensitive scalps.</li>
+          </ul>
+
+      </div><!-- End About Content Section -->
+
+    </div><!-- End Row -->
+
+  </div><!-- End Container -->
+
+</section><!-- End About Section -->
+
+<style>
+/* Styling specific to each progress container */
+.progress-container-php,
+.progress-container-js,
+.progress-container-css,
+.progress-container-html {
+  margin-bottom: 30px; /* Space between progress bars */
+}
+
+.progress-wrapper {
+  margin-bottom: 30px; /* Space between label and progress bar */
+}
+/* Basic styles for the progress bar container */
+.progress {
+  height: 30px; /* Adjust height of the progress bar */
+  margin-bottom: 20px; /* Space between progress bars */
+  border-radius: 5px; /* Rounded corners */
+}
+/* Progress Bar Styles */
+.progress-bar {
+  color: white;
+  font-weight: bold;
+  text-align: center; /* Center text inside the progress bar */
+  line-height: 30px; /* Vertically center the text */
+  border-radius: 10px; /* Rounded corners */
+}
+/* Customize Progress Bar Colors */
+.bg-success {
+  background-color: blue !important; /*  Blue color */
+}
+/* Common styles for all progress containers */
+.container {
+  margin-bottom: 20px; /* Add spacing between each progress bar */
+}
+.progress-container {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+</style>
+<section id="PROGRESS">
+<div class="progress-container">
+<!-- Progress Bar 1: PHP -->
+<section class="progress-container-php container" data-aos="fade-up">
+  <div class="progress-wrapper">
+    <span>PHP</span> <i class="val">25%</i>
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 25%;">25%</div>
+    </div>
+  </div>
+</section>
+
+<!-- Progress Bar 2: JavaScript -->
+<section class="progress-container-js container" data-aos="fade-up">
+  <div class="progress-wrapper">
+    <span>JAVASCRIPT</span> <i class="val">50%</i>
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 50%;">50%</div>
+    </div>
+  </div>
+</section>
+
+<!-- Progress Bar 3: CSS -->
+<section class="progress-container-css container" data-aos="fade-up">
+  <div class="progress-wrapper">
+    <span>CSS</span> <i class="val">75%</i>
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 75%;">75%</div>
+    </div>
+  </div>
+</section>
+
+<!-- Progress Bar 4: HTML -->
+<section class="progress-container-html container" data-aos="fade-up">
+  <div class="progress-wrapper">
+    <span>HTML</span> <i class="val">100%</i>
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 100%;">100%</div>
+    </div>
+  </div>
+</section>
+</div>
+</section>
+
+<style>
+  /* Stats Section */
+.stats-container {
+  background-color: white; /* Light background for the stats section */
+  padding: 60px 0; /* Vertical padding */
+}
+
+.stats-box {
+  background-color:  #f0f8ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the stats boxes */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stats-box:hover {
+  transform: translateY(-10px); /* Hover effect to lift the box */
+}
+
+.stats-number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #007bff; /* Blue color for numbers */
+  margin-bottom: 10px;
+}
+
+.stats-title {
+  font-size: 18px;
+  color: #5d6166; /* Grey color for the text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-box {
+    margin-bottom: 20px;
+  }
+}
+</style>
+
+<!-- Stats Section -->
+<section id="stats" class="stats-container text-center py-5" data-aos="fade-up">
+  <div class="container">
+    <div class="row">
+      <!-- Stats Box 1 -->
+      <div class="col-md-3">
+        <div class="stats-box">
+          <h3 class="stats-number" data-count="1500">300</h3>
+          <p class="stats-title">Hours Of Support</p>
+        </div>
+      </div>
+
+      <!-- Stats Box 2 -->
+      <div class="col-md-3">
+        <div class="stats-box">
+          <h3 class="stats-number" data-count="2000">40</h3>
+          <p class="stats-title">Happy Clients</p>
+        </div>
+      </div>
+
+      <!-- Stats Box 3 -->
+      <div class="col-md-3">
+        <div class="stats-box">
+          <h3 class="stats-number" data-count="10">3</h3>
+          <p class="stats-title">Years of Experience</p>
+        </div>
+      </div>
+
+      <!-- Stats Box 4 -->
+      <div class="col-md-3">
+        <div class="stats-box">
+          <h3 class="stats-number" data-count="500">50</h3>
+          <p class="stats-title">Products Sold</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 480px) {
+    .carousel-caption {
+	margin-left: 0px;
+	padding: 35px;
+	width: 70%;
+	text-align: -moz-center;
+	margin-bottom: 64px;
+}
+    h {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 130%;
+    }
+  }
+
+ @media (min-width: 768px) {
+  .carousel-caption {
+    padding: 130px;
+  }
+ }
+
+</style>
+<!-- Testimonials section -->
+<div id="myCarousel" class="carousel slide mb-6" style="height: 500px;" data-bs-ride="carousel"  data-aos="fade-up">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- CONTENT CONTAINER -->
+  <div class="carousel-inner" style="height: 500px;"> <!-- Set height for the entire carousel -->
+    <div class="carousel-item active" style="height: 100%;">
+      <!-- Placeholder image -->
+      <img src="img.jpg/carousel02.img.jpg" alt="Slide 1 Image" class="d-block w-100" style="object-fit: cover; height: 100%; text-align: center; flex-wrap: nowrap;">
+          <div class="container">
+            <div class="carousel-caption">
+          <h1>Adesanya Rasheedat</h1>
+          <p>"This is the best product I've ever used. My hair has never been healthier!"</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 100%;">
+      <!-- Placeholder image -->
+      <img src="img.jpg/carousel02.img.jpg" alt="Slide 2 Image" class="d-block w-100" style="object-fit: cover; height: 100%; text-align: center;">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Adekunle Precious</h1>
+          <p>"Lola's hair care products really work! My hair shines brighter every day."</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 100%;">
+      <!-- Placeholder image -->
+      <img src="img.jpg/carousel02.img.jpg" alt="Slide 3 Image" class="d-block w-100" style="object-fit: cover; height: 100%; text-align: center;">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Simon Favour</h1>
+          <p>"I recommend Lola's products to everyone. My hair growth has improved so much!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- Add some custom styles -->
+<style>
+  #myCarousel {
+    max-width: 100%;
+    width: 100%;
+    height: 500px; /* Set height for the entire carousel */
+  }
+
+  .carousel-inner {
+    height: 100%; /* Make sure the inner container takes up the full height */
+  }
+
+  .carousel-item {
+    height: 100%; /* Ensure the carousel items take up the full height */
+  }
+
+  .carousel-caption {
+    z-index: 10; /* Ensure the text is above the image */
+  }
+
+  .carousel-item img {
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    height: 100%; /* Make sure the image takes up the full height of the container */
+    opacity: 0.9;
+  }
+
+  .carousel-inner h1 {
+    font-size: 210%;
+    color: #f0f8ff;
+  }
+  .carousel-inner p {
+    font-size: 150%;
+    color: #f0f8ff;
+  }
+</style>
+
+
+
+<!-- PRODUCT SECTION -->
+<section id="products" class="products section py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Section Title -->
+      <div class="col-12 text-center mb-5">
+        <h2 data-aos="fade-up"><b>Our Products</b></h2>
+        <p data-aos="fade-up" data-aos-delay="100">Check out our latest products</p>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Product 1 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="200">
+        <div class="card shadow-sm">
+          <img src="img.jpg/pro1.png.jpg" class="card-img-top" alt="Product 1">
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm">
+          <img src="img.jpg/pro2.png.jpg" class="card-img-top" alt="Product 2">
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="400">
+        <div class="card shadow-sm">
+          <img src="img.jpg/pro3.png.jpg" class="card-img-top" alt="Product 3">
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col" data-aos="fade-up" data-aos-delay="500">
+        <div class="card shadow-sm">
+          <img src="img.jpg/pro4.png.jpg" class="card-img-top" alt="Product 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /* Full background color for the section */
+  .team-section {
+    background-color: #f0f8ff; /* Very light sky blue */
+    padding: 60px 0; /* Add padding for spacing */
+  }
+
+  /* Custom styling for the TEAM heading */
+  .team-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1E90FF; /* A slightly darker sky blue */
+    margin-bottom: 40px; /* Add space between the heading and the columns */
+  }
+
+  /* Styling for the rounded image placeholders */
+  .rounded-circle {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* Optional styling for the buttons */
+  .btn-secondary {
+    background-color: #00BFFF; /* Deep sky blue button */
+    border-color: #00BFFF;
+  }
+
+  .btn-secondary:hover {
+    background-color: #009ACD;
+    border-color: #009ACD;
+  }
+  
+  .Team-container {
+    padding: 10px;
+  }
+
+  @media (max-width: 480px) {
+    p {
+	font-size: 16px;
+	padding: 4px;
+    }
+}
+
+  @media (max-width: 810px) {
+  p {
+    margin-bottom: 0px;
+  }
+}
+</style>
+
+<!-- Full section background -->
+<div class="team-section">
+
+  <!-- Marketing messaging and featurettes -->
+  <div class="container marketing">
+
+    <!-- TEAM Heading -->
+    <div class="team-heading">
+      <span>TEAM</span>
+    </div>
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class=" col-lg-4 text-center">
+        <div class="Team-container">
+        <!-- Placeholder image -->
+        <img src="img.jpg/gid.jpg" width="240" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+        </svg>
+        <h2 class="fw-normal">Gideon Aina</h2> <!-- Example name -->
+        <p>Website Designer</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+      
+      <div class="col-lg-4 text-center">
+        <div class="Team-container">
+        <!-- Placeholder image -->
+        <img src="bd-placeholder-img rounded-circle" width="240" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+        </svg>
+        <h2 class="fw-normal">Jane Smith</h2> <!-- Example name -->
+        <p>Project Manager</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4 text-center">
+        <div class="Team-container">
+        <!-- Placeholder image -->
+        <img src="bd-placeholder-img rounded-circle" width="240" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+        </svg>
+        <h2 class="fw-normal">Alice Brown</h2> <!-- Example name -->
+        <p>UX/UI Designer</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        </div>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
+
+</div><!-- /.team-section -->
+
+
+
+<!-- PRICING SECTION -->
+<section id="price" class="price section py-5">
+  <!-- Heading for the pricing section -->
+  <div class="container text-center">
+    <h1 class="display-2.5 fw-bold lh-1 text-body-emphasis">PRICES</h1>
+  </div>
+</section>
+
+<!-- Hair cream Pricing -->
+<section id="pricing" class="pricing section py-5">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+
+      <!-- Free Plan -->
+      <div class="col" data-aos="fade-up" data-aos-delay="200">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Hair cream</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li></li>
+              <li>Nourishing Hair Cream</li>
+              <li>Strengthening Hair Cream</li>
+              <li>Shine Boost Hair Cream</li>
+              <li>Shine Boost Hair Cream</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hair conditioner pricing -->
+      <div class="col" data-aos="fade-up" data-aos-delay="400">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Hair conditioner</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Hydrating Argan Conditioner</li>
+              <li>Repairing Protein Conditioner</li>
+              <li>Deep Conditioning Treatment</li>
+              <li>Lightweight Daily Conditioner</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hair shampoo pricing -->
+      <div class="col" data-aos="fade-up" data-aos-delay="600">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Hair shampoo</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29</h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li> Refreshing Mint Shampoo</li>
+              <li>Moisturizing Coconut Shampoo</li>
+              <li>Volumizing Shampoo</li>
+              <li>Gentle Baby Shampoo</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* MEDIA QUERY */
+  @media (max-width:810px) {
+    h3 {
+	margin-top: 15px;
+	margin-bottom: 1rem;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--bs-heading-color);
+}
+  }
+
+  @media (max-width:480px) {
+    h3 {
+	margin-top: 18px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: var(--bs-heading-color);
+	font-size: 1.3rem;
+}
+p {
+	font-size: 16px;
+	margin-bottom: -4px;
+}
+  }
+</style>
+<!-- FAQ Section -->
+<section id="faq" class="faq section light-background" style="background-color:#f0f8ff; padding: 50px 0;">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <!-- FAQ Title with Blue Button-Like Frame -->
+    <h2 class="fw-bold p-3 rounded-3" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 30px; border-radius: 30px;">F.A.Q</h2> <!-- Button-like title -->
+    <p><span>Frequently Asked</span> <span class="description-title">Questions</span></p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-container">
+
+          <!-- FAQ Items -->
+          <div class="faq-item faq-active">
+            <h3><b>What ingredients are used in your hair creams?</b></h3>
+            <div class="faq-content">
+              <p>Our hair creams are made with a blend of natural ingredients such as shea butter, coconut oil, argan oil, and essential vitamins. We prioritize the use of organic and cruelty-free ingredients to promote healthy hair.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><b>Are your hair creams suitable for all hair types?</b></h3>
+            <div class="faq-content">
+              <p>Yes, our hair creams are designed to be suitable for all hair types, including curly, straight, dry, and oily hair. We offer a variety of formulas that cater to different hair needs, whether you're looking to hydrate, nourish, or strengthen your hair.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><b>How often should I use the hair cream?</b></h3>
+            <div class="faq-content">
+              <p>For best results, we recommend using our hair creams 2-3 times a week, depending on your hair type and needs. If you have dry or damaged hair, you can use it more frequently for added moisture and repair.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><b>Are your hair creams safe for color-treated hair?</b></h3>
+            <div class="faq-content">
+              <p>Yes, our hair creams are safe for color-treated hair. They are formulated with gentle ingredients that help maintain the vibrancy of your color while providing nourishment and moisture to your hair.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><b>Can I use the hair cream on my scalp?</b></h3>
+            <div class="faq-content">
+              <p>Yes, our hair creams can be applied to your scalp. However, if you have sensitive skin or specific scalp conditions, we recommend doing a patch test before full application. Our formulations are gentle and safe for most scalp types.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3><b>Do your hair creams have a fragrance?</b></h3>
+            <div class="faq-content">
+              <p>Yes, our hair creams have a light, natural fragrance from essential oils like lavender and chamomile. We ensure that the scent is not overpowering and is suitable for all-day use without irritation.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+        </div>
+      </div><!-- End Faq Column-->
+    </div>
+  </div>
+
+</section>
+
+
+<style>
+  @media (max-width: 480px) {
+    .Table-container {
+      width: 600px;
+    }
+  }
+</style>
+<!-- Contact Us Section -->
+<section id="contact-us" class="contact-us section py-5" style="background-color: white;">
+
+  <!-- Section Title -->
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2 style="font-weight: bold;">Need Help? Contact Us</h2>
+    <p>We're here to assist you. Please fill out the form below, and we'll get back to you as soon as possible!</p>
+  </div>
+
+  <!-- Contact Form and Table -->
+  <div class="container">
+    <div class="row">
+      <!-- Form Section -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card p-4 shadow-sm">
+          <h4 class="mb-3">Fill out the form:</h4>
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter the subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="complaints" class="form-label">Complaints/Message</label>
+              <textarea class="form-control" id="complaints" rows="4" placeholder="Enter your complaint or message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Table Section -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="Table-container">
+        <div class="card p-4 shadow-sm">
+          <h4 class="mb-3">Contact Details</h4>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Complaints</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Example of submitted data (you can dynamically add rows here) -->
+              <tr>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>Delivery Issue</td>
+                <td>My product arrived damaged. Please assist.</td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>Product Inquiry</td>
+                <td>Can I get more details on the ingredients?</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer id="footer" class="footer light-blue-bg">
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+  </footer>
+</div>
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  // Initialize AOS
+  AOS.init({
+    offset: 200, // offset (in px) from the original trigger point
+    duration: 1000, // animation duration (in ms)
+    easing: 'ease-in-out', // easing function
+    delay: 0, // delay (in ms) before starting animation
+    once: true, // whether animation should happen only once
+    mirror: false, // whether animations should trigger when scrolling back up
+  });
+</script>
+
+<script>
+  // Initialize the carousel to start automatically
+  var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+    interval: 8000,  // Slide every 7 seconds
+    ride: 'carousel' // Automatically start the carousel
+  });
+</script>
+
+
+
+
+  </body>
+</html>
